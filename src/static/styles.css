@@ -63,6 +63,12 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(26, 35, 126, 0.07);
+  transition: box-shadow 0.2s;
+}
+
+.activity-card:hover {
+  box-shadow: 0 4px 16px rgba(26, 35, 126, 0.15);
 }
 
 .activity-card h4 {
@@ -72,6 +78,57 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 10px;
+  background: #e3eafc;
+  border-radius: 4px;
+  padding: 10px 12px 8px 12px;
+  border: 1px solid #c5cae9;
+}
+
+.participants-section strong {
+  color: #1a237e;
+  font-size: 15px;
+}
+
+.participants-list {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.participants-list li {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.participant-avatar {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  background: #3949ab;
+  color: #fff;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 8px;
+  box-shadow: 0 1px 2px rgba(26, 35, 126, 0.10);
+}
+
+.participant-email {
+  font-family: 'Fira Mono', 'Consolas', monospace;
+  color: #333;
+}
+
+.no-participants {
+  color: #888;
+  font-style: italic;
 }
 
 .form-group {
